@@ -1,6 +1,6 @@
 backend:
   name: github
-  repo: idaneschilling/givecamp-demo
+  repo: idaneschilling/givecamp_demo
 
 publish_mode: editorial_workflow
 media_folder: "static/images/uploads"
