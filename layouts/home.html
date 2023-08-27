@@ -275,8 +275,7 @@
 										<h2 class="icon solid fa-file circled"><span class="label">Posts</span></h2>
 									</header>
 									<ul class="divided">
-									  <ul>
-										{{ range (where .Pages "Section" "blog") }}
+										{{ range (where .Pages "Section" "_posts.blog") }}
 											<article class="post stub">
 												<header>
 													<h3><a href="{{ .RelPermalink }}">{{ .Title }}</a></h3>
