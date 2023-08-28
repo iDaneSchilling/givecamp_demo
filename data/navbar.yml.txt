@@ -1,0 +1,12 @@
+navbar_links:
+- name: Home
+  url: "/"
+- name: About
+  url: "/about/"
+- name: Services
+  url: "/service/"
+  children:  # Optionally add a child subservice
+  - name: Sub Service  # Same format as parent
+    url: "/services/sub-service/"
+- name: Blog
+  url: "/blog/"
