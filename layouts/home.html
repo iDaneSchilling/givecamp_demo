@@ -34,7 +34,7 @@
 						<nav id="nav">
 							<ul>
 							{{ range $.Site.Data.navbar }}
-								{{range .navbar_links}}
+								{{range $.navbar_links}}
 									<li>
 										<a href="{{ .url }}">{{ .name }}
 										<!-- Display a dropdown icon, if this element has children -->
