@@ -33,7 +33,7 @@
 					<!-- Nav -->
 						<nav id="nav">
 							<ul>
-							{{ range .Site.Data.navbar }}
+							{{ range $.Site.Data.navbar }}
 								{{range .navbar_links}}
 									<li>
 										<a href="{{ .url }}">{{ .name }}
