@@ -23,7 +23,7 @@
 							<header>
 								<h1><a href="index.html" id="logo">Helios</a></h1>
 								<hr />
-								<p>Another fine freebie by HTML5 UP</p>
+								<p>Another fine freebie by HTML5 UP {{ .Site.Data.general.Name }}</p>
 							</header>
 							<footer>
 								<a href="#banner" class="button circled scrolly">Start</a>
@@ -33,26 +33,26 @@
 					<!-- Nav -->
 						<nav id="nav">
 							<ul>
-							{{ range .Site.Data.navbar }}
-								{{ range .navbar_links }}
+							 range .Site.Data.navbar 
+								 range .navbar_links 
 									<li>
 										<a href="{{ .url }}">{{ .name }}
 										<!-- Display a dropdown icon, if this element has children -->
-										{{with .children }}
+										with .children 
 											<i class="ri-arrow-down-s-line"></i> 
-										{{end}}
+										end
 										</a>
 										<!-- Display the children list, if this element has children -->
-										{{if .children}}
+										if .children
 											<ul>
-											{{range .children }}
+											range .children }
 												<a href="{{ .url }}">{{ .name }}</a>
-											{{end}}
+											end
 											</ul>
-										{{end}}
+										end
 									</li>
-								{{ end }}
-							{{ end }}
+								 end 
+							 end 
 							</ul>
 						</nav>
 
