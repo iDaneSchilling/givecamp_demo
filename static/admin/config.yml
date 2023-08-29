@@ -22,13 +22,14 @@ collections:
     label: "Navigation Bar"
     files:
       - file: "data/navbar.yml"
+        name: "NavBar"
         label: "Navigation Bar"
         fields:
-            - widget: list
-              name: navbar_links
-              label: Navigation Bar Items
+            - widget: "list"
+              name: "navbar_links"
+              label: "Navigation Bar Items"
               required: true
-              hint: Appears in the header of the site. 
+              hint: "Appears in the header of the site."
               fields:
               - label: "Name"
                 name: "name"
