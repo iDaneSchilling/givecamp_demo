@@ -31,23 +31,23 @@ collections:
               hint: Appears in the header of the site. 
               fields:
               - label: "Name"
-                  name: "name"
-                  widget: "string"
-                  required: true
+                name: "name"
+                widget: "string"
+                required: true
               - label: "URL"
-                  name: "url"
-                  widget: "string"
-                  required: true
+                name: "url"
+                widget: "string"
+                required: true
               - label: "Children"
-                  name: "children"
-                  widget: "list"
-                  required: false
-                  fields:
+                name: "children"
+                widget: "list"
+                required: false
+                fields:
                   - label: "Name"
-                      name: "name"
-                      widget: "string"
-                      required: true
+                    name: "name"
+                    widget: "string"
+                    required: true
                   - label: "URL"
-                      name: "url"
-                      widget: "string"
-                      required: true
+                    name: "url"
+                    widget: "string"
+                    required: true
