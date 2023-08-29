@@ -37,18 +37,18 @@
 								<li>
 									<a href="{{ .url }}">{{ .name }}
 									<!-- Display a dropdown icon, if this element has children -->
-									with .children 
+									{{ with .children }}
 										<i class="ri-arrow-down-s-line"></i> 
-									end
+									{{ end }}
 									</a>
 									<!-- Display the children list, if this element has children -->
-									if .children
+									{{ if .children }}
 										<ul>
-										range .children 
-											<a href=" .url "> .name </a>
-										end
+										{{ range .children }}
+											<a href="{{ .url }}">{{ .name }}</a>
+										{{ end }}
 										</ul>
-									end
+									{{ end }}
 								</li>
 							 {{ end }}
 							</ul>
