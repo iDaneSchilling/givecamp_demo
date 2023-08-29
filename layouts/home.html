@@ -36,7 +36,7 @@
 							 range .Site.Data.navbar 
 								 range .navbar_links 
 									<li>
-										<a href="{{ .url }}">{{ .name }}
+										<a href=" .url "> .name 
 										<!-- Display a dropdown icon, if this element has children -->
 										with .children 
 											<i class="ri-arrow-down-s-line"></i> 
@@ -45,8 +45,8 @@
 										<!-- Display the children list, if this element has children -->
 										if .children
 											<ul>
-											range .children }
-												<a href="{{ .url }}">{{ .name }}</a>
+											range .children 
+												<a href=" .url "> .name </a>
 											end
 											</ul>
 										end
