@@ -23,7 +23,7 @@ collections:
     files:
       - file: "data/navbar.yml"
         name: "NavBar"
-        label: "Navigation Bar"
+        1: "Navigation Bar"
         fields:
             - widget: "list"
               name: "navbar_links"
@@ -52,3 +52,21 @@ collections:
                     name: "url"
                     widget: "string"
                     required: true
+  - name: "general"
+    label: "General Data"
+    files:
+      - file: "data/general.yml"
+        name: "General"
+        1: "General Data"
+        fields:
+            - widget: "object"
+              name: "general"
+              label: "General Items"
+              required: true
+              hint: "Controls basic site info."
+              fields:
+              - label: "Name"
+                name: "name"
+                widget: "string"
+                required: true
+
