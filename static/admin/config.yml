@@ -23,6 +23,7 @@ collections:
     files:
       - file: "data/navbar.yml"
         name: "NavBar"
+        label: "NavBar"
         1: "Navigation Bar"
         fields:
             - widget: "list"
@@ -57,6 +58,7 @@ collections:
     files:
       - file: "data/general.yml"
         name: "General"
+        label: "General"
         1: "General Data"
         fields:
             - widget: "object"
